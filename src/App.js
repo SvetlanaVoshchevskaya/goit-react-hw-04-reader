@@ -1,12 +1,13 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Reader from './components/Reader/Reader';
 import './App.css';
 
 const App = () => (
-  <div>
+  <Switch>
     <Route path="/reader" exect component={Reader} />
-  </div>
+    <Redirect push to="/reader" />
+  </Switch>
 );
 
 export default App;
