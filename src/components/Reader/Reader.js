@@ -71,7 +71,7 @@ class Reader extends Component {
         ) : (
           <Redirect
             to={{
-              pathname: '/reader',
+              pathname: '/',
               search: '?item=0',
             }}
           />

@@ -5,8 +5,8 @@ import './App.css';
 
 const App = () => (
   <Switch>
-    <Route path="/reader" exect component={Reader} />
-    <Redirect push to="/reader" />
+    <Route path="/" exect component={Reader} />
+    <Redirect push to="/" />
   </Switch>
 );
 
