@@ -55,7 +55,7 @@ class Reader extends Component {
     const qs = Number(indexFromLocation(location.search));
     return (
       <div>
-        {qs <= 0 && qs >= 11 ? (
+        {qs >= 0 && qs <= 11 ? (
           <div className={styles.reader}>
             <Publication
               title={publication[qs].title}
@@ -71,7 +71,7 @@ class Reader extends Component {
         ) : (
           <Redirect
             to={{
-              pathname: '/',
+              pathname: '/reader',
               search: '?item=0',
             }}
           />
